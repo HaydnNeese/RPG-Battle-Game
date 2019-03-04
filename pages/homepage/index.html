@@ -1,0 +1,33 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\CSS\reset.css">
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\CSS\home.css">
+</head>
+
+<body background="assets\images\arena-background.png">
+    <div class="title-area">
+        <img id="img-title" src="assets/images/title_img.png" alt="game logo">
+    </div>
+    <div class="options-area">
+        <ul id="start-options">
+            <li onmouseenter=playClick() class="menu-option">Continue</li>
+            <li onmouseenter=playClick() class="menu-option">New Game</li>
+            <li onmouseenter=playClick() class="menu-option">Load Game</li>
+            <li onmouseenter=playClick() class="menu-option">Options</li>
+            <li onmouseenter=playClick() class="menu-option">Quit</li>
+        </ul>
+    </div>
+    <iframe src="assets\audio\serge-narcissoff-dark-knight.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe>
+    <audio id="click_audio" src="assets/audio/mouseclick.wav"></audio>
+    <script src="assets/logic/home.js"></script>
+</body>
+
+</html>

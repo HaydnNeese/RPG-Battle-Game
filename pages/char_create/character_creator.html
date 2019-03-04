@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Character Creation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/character_creator.css">
+</head>
+
+<body>
+    <!-- Make all of the input fields for the character creation -->
+    <div id="character-creation-box">
+        <form id="character-form">
+            <!-- Character Name -->
+            <input id="character-name" name="CharacterName" type="text" placeholder="Character Name">
+            <!-- Choose Race -->
+            <select id="race-select" name="race">
+                <option data-race="Human" value="Human">Human</option>
+                <option data-race="Dwarf" value="Dwarf">Dwarf</option>
+                <option data-race="Elf" value="Elf">Elf</option>
+                <option data-race="Orc" value="Orc">Orc</option>
+                <option data-race="Undead" value="Undead">Undead</option>
+                <option data-race="Fae" value="Fae">Fae</option>
+                <option data-race="Demon" value="Demon">Demon</option>
+            </select>
+            <!-- Choose a race determined by the race choice -->
+            <select id="subrace-select" name="subrace">
+                <option data-subrace=""></option>
+            </select>
+            <!-- Choose a class relative to the race and the subrace -->
+            <select id="class-select" name="class">
+                <option></option>
+            </select>
+            <!-- Choose the subclass more in tune with your playstyle -->
+            <select id="subclass-select" name="subclass">
+                <option></option>
+            </select>
+            <!-- The rumored dead end -->
+            <input id="input-btn" type="submit">
+        </form>
+    </div>
+<script type="text/javascript" src="../assets/logic/character_create.js"></script>
+</body>
+
+</html>
